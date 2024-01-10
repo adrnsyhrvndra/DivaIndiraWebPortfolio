@@ -5,7 +5,7 @@ export const PendidikanTerakhkirkuCard = () => {
     <div aria-label="pendidikan-terakhirku" className="xl:mt-[-6.5rem]">
       <div
         aria-label="kotak-cta-pendidikan-terakhir-orange"
-        className="pt-12 pb-12 pr-8 pl-32 rounded-2xl bg-orange-web relative overflow-hidden"
+        className="pt-12 pb-12 pr-8 pl-32 bg-orange-web relative overflow-hidden"
       >
         <div className="flex items-center xl:gap-36">
           <div className="flex flex-col xl:ml-10">

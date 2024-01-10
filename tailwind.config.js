@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'bg-hitam-vertical' : "url('/src/img/bg-vertical-timeline-hitam.png')",
+      },
       colors: {
         'cream-web': '#E1B171',
         'orange-web': '#EF713F', // Perbaikan: Hapus hash ekstra

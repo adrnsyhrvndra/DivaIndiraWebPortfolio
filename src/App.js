@@ -5,6 +5,8 @@ import { Navbar } from './components/Navbar';
 import {PendidikanTerakhkirkuCard} from './components/PendidikanTerakhirkuCard';
 import {IntroductionDiva} from './components/IntroductionDiva';
 import {AlasanBapakIbu} from './components/AlasanBapakIbu';
+import {PengalamanKerjaTimeline} from './components/PengalamanKerjaTimeline';
+import {SkillDanKemampuan} from './components/SkillDanKemampuan';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
         <IntroductionDiva/>
         <AlasanBapakIbu/>
       </div>
+      <PengalamanKerjaTimeline/>
+      <SkillDanKemampuan/>
     </>
   );
 }
