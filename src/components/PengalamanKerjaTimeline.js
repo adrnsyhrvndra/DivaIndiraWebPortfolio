@@ -14,7 +14,7 @@ export const PengalamanKerjaTimeline = () => {
   return (
     <div
       aria-label="pengalaman-kerja-timeline"
-      className="bg-bg-hitam-vertical xl:mt-32 relative"
+      className="bg-bg-hitam-vertical xl:mt-32 relative overflow-x-hidden"
     >
       <img className="absolute xl:bottom-0 xl:left-0 xl:w-80" src={graphic1} alt="" />
       <img className="absolute xl:top-28 xl:-right-28 xl:w-96" src={graphic2} alt="" />

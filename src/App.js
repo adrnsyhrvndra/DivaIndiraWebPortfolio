@@ -7,6 +7,9 @@ import {IntroductionDiva} from './components/IntroductionDiva';
 import {AlasanBapakIbu} from './components/AlasanBapakIbu';
 import {PengalamanKerjaTimeline} from './components/PengalamanKerjaTimeline';
 import {SkillDanKemampuan} from './components/SkillDanKemampuan';
+import {WorkTogetherAndCv} from './components/WorkTogetherAndCv';
+import {ContactMe} from './components/ContactMe';
+import {Footer} from './components/Footer';
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
       </div>
       <PengalamanKerjaTimeline/>
       <SkillDanKemampuan/>
+      <WorkTogetherAndCv/>
+      <ContactMe/>
+      <Footer/>
     </>
   );
 }
