@@ -6,31 +6,30 @@ export const Navbar = () => {
   return (
     <div
       aria-label="navbar"
-      className="bg-bg-web flex justify-between flex-row items-center xl:pt-6 xl:pb-8 border-b-[2px] xl:px-14"
+      className="bg-bg-web flex justify-between flex-row items-center border-b-[2px] lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14"
     >
-      <img src={logoweb} alt="logo-web-diva" />
-      <div className="flex flex-row items-center xl:gap-[4.5rem]">
+      <img className="lg:w-36 xl:w-44" src={logoweb} alt="logo-web-diva" />
+      <div className="flex flex-row items-center lg:gap-[2.2rem] xl:gap-[4.5rem]">
         <div aria-label="nav-menu">
-          <ul className="list-none flex flex-row text-slate-400 items-center xl:gap-16">
-            <li className="font-bold bg-cream-web text-coklat-home tracking-wider xl:px-4 xl:py-1 xl:text-base">
+          <ul className="list-none flex flex-row text-slate-400 items-center lg:gap-8 xl:gap-16">
+            <li className="font-bold bg-cream-web text-coklat-home tracking-wider lg:px-4 lg:py-1 lg:text-base xl:px-4 xl:py-1 xl:text-base">
               Home
             </li>
-            <li className="font-normal tracking-wider xl:text-base">About</li>
-            <li className="font-normal tracking-wider xl:text-base">Services</li>
-            <li className="font-normal tracking-wider xl:text-base">Portfolio</li>
-            <li className="font-normal tracking-wider xl:text-base">
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base">About</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base">Services</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base">Portfolio</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base">
               CV Download
             </li>
           </ul>
         </div>
         <div
           aria-label="button-contact-me"
-          className="flex flex-row items-center rounded-full bg-coklat-web xl:gap-2 xl:px-6 xl:py-2"
+          className="flex flex-row items-center rounded-full bg-coklat-web lg:gap-2 lg:px-6 lg:py-2 xl:gap-2 xl:px-6 xl:py-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            className="lg:w-6 xl:w-6"
             viewBox="0 0 24 24"
             fill="none"
           >

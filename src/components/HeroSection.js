@@ -5,17 +5,16 @@ export const HeroSection = () => {
   return (
     <div
       aria-label="hero-section"
-      className="grid grid-cols-12 relative xl:px-14 xl:pb-44 xl:mt-[5.5rem]"
+      className="grid grid-cols-12 relative lg:px-14 lg:pb-44 lg:mt-[1.5rem] xl:px-14 xl:pb-44 xl:mt-[5.5rem]"
     >
       <div
         aria-label="col-pertama-hero-section"
         className="col-span-5 z-40 relative"
       >
-        <div className="flex flex-row items-center justify-start xl:gap-2">
+        <div className="flex flex-row items-center justify-start lg:gap-2 xl:gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            className="lg:w-4 xl:w-4"
             viewBox="0 0 16 16"
             fill="none"
           >
@@ -24,11 +23,11 @@ export const HeroSection = () => {
               fill="#333232"
             />
           </svg>
-          <h5 className="uppercase text-slate-500 font-bold xl:tracking-[0.219rem] xl:text-sm">
+          <h5 className="uppercase text-slate-500 font-bold lg:tracking-[0.15rem] lg:text-[0.8rem] xl:tracking-[0.219rem] xl:text-sm">
             Customer Service & Marketing
           </h5>
         </div>
-        <h1 className="font-black text-[#333232] xl:text-[3.3rem] xl:leading-[3.938rem] xl:mt-4 min-[1440px]:text-[3.8rem]">
+        <h1 className="font-black text-[#333232] lg:text-[2.5rem] xl:text-[3.3rem] xl:leading-[3.938rem] xl:mt-4 min-[1440px]:text-[3.8rem]">
           Hello I’m <br />
           <span className="break-words text-coklat-home">
             Diva Indira Asauri
