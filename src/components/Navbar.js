@@ -6,30 +6,30 @@ export const Navbar = () => {
   return (
     <div
       aria-label="navbar"
-      className="bg-bg-web flex justify-between flex-row items-center border-b-[2px] lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14"
+      className="bg-bg-web flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-5 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14"
     >
-      <img className="lg:w-36 xl:w-44" src={logoweb} alt="logo-web-diva" />
-      <div className="flex flex-row items-center lg:gap-[2.2rem] xl:gap-[4.5rem]">
-        <div aria-label="nav-menu">
-          <ul className="list-none flex flex-row text-slate-400 items-center lg:gap-8 xl:gap-16">
-            <li className="font-bold bg-cream-web text-coklat-home tracking-wider lg:px-4 lg:py-1 lg:text-base xl:px-4 xl:py-1 xl:text-base">
+      <img className="order-1 md:order-2 md:w-24 lg:order-1 w-28 lg:w-36 xl:w-44 2xl:w-64" src={logoweb} alt="logo-web-diva" />
+      <div className="hidden flex-row items-center md:order-3 md:flex lg:order-2 lg:gap-[2.2rem] xl:gap-[4.5rem] min-[1400px]:gap-[4.8rem]">
+        <div aria-label="nav-menu" className="hidden lg:block">
+          <ul className="list-none flex flex-row text-slate-400 items-center lg:gap-8 min-[1110px]:gap-12 xl:gap-16 min-[1400px]:gap-20 min-[1500px]:gap-24 2xl:gap-20 min-[1600px]:gap-[5.5rem] min-[1700px]:gap-[6.5rem] min-[1800px]:gap-[7.5rem]">
+            <li className="font-bold bg-cream-web text-coklat-home tracking-wider lg:px-4 lg:py-1 lg:text-base xl:px-4 xl:py-1 xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">
               Home
             </li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base">About</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base">Services</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base">Portfolio</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base">
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">About</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">Services</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">Portfolio</li>
+            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">
               CV Download
             </li>
           </ul>
         </div>
         <div
           aria-label="button-contact-me"
-          className="flex flex-row items-center rounded-full bg-coklat-web lg:gap-2 lg:px-6 lg:py-2 xl:gap-2 xl:px-6 xl:py-2"
+          className="hidden md:flex flex-row items-center rounded-full bg-coklat-web md:gap-1 md:py-2 md:px-4 lg:gap-2 lg:px-6 lg:py-2 xl:gap-2 xl:px-6 xl:py-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:w-6 xl:w-6"
+            className="md:w-[0.9rem] lg:w-6 xl:w-6"
             viewBox="0 0 24 24"
             fill="none"
           >
@@ -40,9 +40,12 @@ export const Navbar = () => {
               fill="#C8945B"
             />
           </svg>
-          <h6 className="text-white">Contact Me</h6>
+          <h6 className="text-white md:text-[0.6rem] lg:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">Contact Me</h6>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" className="order-2 w-10 md:order-1 lg:hidden" viewBox="0 0 40 41" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.928 37.1235C5.86 40.0515 10.572 40.0515 20 40.0515C29.428 40.0515 34.142 40.0515 37.07 37.1215C40 34.1955 40 29.4795 40 20.0515C40 10.6235 40 5.90951 37.07 2.97951C34.144 0.0515137 29.428 0.0515137 20 0.0515137C10.572 0.0515137 5.858 0.0515137 2.928 2.97951C0 5.91151 0 10.6235 0 20.0515C0 29.4795 0 34.1955 2.928 37.1235ZM33.5 28.0515C33.5 28.4493 33.342 28.8309 33.0607 29.1122C32.7794 29.3935 32.3978 29.5515 32 29.5515H8C7.60218 29.5515 7.22064 29.3935 6.93934 29.1122C6.65804 28.8309 6.5 28.4493 6.5 28.0515C6.5 27.6537 6.65804 27.2722 6.93934 26.9909C7.22064 26.7095 7.60218 26.5515 8 26.5515H32C32.3978 26.5515 32.7794 26.7095 33.0607 26.9909C33.342 27.2722 33.5 27.6537 33.5 28.0515ZM32 21.5515C32.3978 21.5515 32.7794 21.3935 33.0607 21.1122C33.342 20.8309 33.5 20.4493 33.5 20.0515C33.5 19.6537 33.342 19.2722 33.0607 18.9909C32.7794 18.7095 32.3978 18.5515 32 18.5515H8C7.60218 18.5515 7.22064 18.7095 6.93934 18.9909C6.65804 19.2722 6.5 19.6537 6.5 20.0515C6.5 20.4493 6.65804 20.8309 6.93934 21.1122C7.22064 21.3935 7.60218 21.5515 8 21.5515H32ZM33.5 12.0515C33.5 12.4493 33.342 12.8309 33.0607 13.1122C32.7794 13.3935 32.3978 13.5515 32 13.5515H8C7.60218 13.5515 7.22064 13.3935 6.93934 13.1122C6.65804 12.8309 6.5 12.4493 6.5 12.0515C6.5 11.6537 6.65804 11.2722 6.93934 10.9909C7.22064 10.7095 7.60218 10.5515 8 10.5515H32C32.3978 10.5515 32.7794 10.7095 33.0607 10.9909C33.342 11.2722 33.5 11.6537 33.5 12.0515Z" fill="#5C4534"/>
+      </svg>
     </div>
   )
 }

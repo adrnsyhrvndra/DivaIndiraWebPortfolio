@@ -2,39 +2,48 @@ import * as React from "react";
 
 export const IntroductionDiva = () => {
   return (
-    <div aria-label="introduction-diva" className="xl:mt-[9.5rem] relative">
+    <div aria-label="introduction-diva" className="mt-11 md:mt-32 xl:mt-[9.5rem] relative">
       <div className="flex flex-row items-center xl:gap-6">
-        <div className="grid grid-cols-12">
-          <div className="col-span-5">
-            <div className="flex flex-col">
-              <div className="flex flex-row items-center xl:gap-8">
+        <div className="grid grid-cols-12 md:gap-4 lg:gap-5">
+          <div className="col-span-12 md:col-span-5 md:self-start">
+            <div className="flex flex-col md:gap-1 lg:gap-2">
+              <div className="flex flex-row items-center gap-4 justify-center md:justify-start md:gap-4 lg:gap-6 xl:gap-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8"
+                  className="w-4 fill-[#EF713F] md:fill-[#333232] md:w-[1.4rem] xl:w-8"
                   viewBox="0 0 32 33"
                   fill="none"
                 >
                   <path
                     d="M20.1339 20.0127L31.3547 17.3163C32.2137 17.1103 32.2137 15.8886 31.3547 15.6815L20.1339 12.9851C19.8272 12.9117 19.5872 12.6717 19.5127 12.3639L16.8163 1.14425C16.6103 0.28525 15.3886 0.28525 15.1815 1.14425L12.4851 12.365C12.4117 12.6717 12.1717 12.9117 11.8639 12.9862L0.644251 15.6826C-0.21475 15.8886 -0.21475 17.1103 0.644251 17.3174L11.865 20.0138C12.1717 20.0872 12.4117 20.3272 12.4862 20.635L15.1826 31.8557C15.3886 32.7147 16.6103 32.7147 16.8174 31.8557L19.5138 20.635C19.5872 20.3261 19.8272 20.0872 20.1339 20.0127Z"
-                    fill="#333232"
                   />
                 </svg>
-                <h6 className="font-black text-[#35352F] xl:text-[3.313rem]">
-                  Kenalan Dulu
+                <h6 className="font-black text-[2.1rem] text-[#35352F] md:text-[2.1rem] lg:text-[2.7rem] xl:text-[3.3rem] 2xl:text-[4.2rem]">
+                  Kenalan Dulu!
                 </h6>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 fill-[#EF713F] md:hidden md:fill-[#333232] xl:w-8"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
+                  <path
+                    d="M20.1339 20.0127L31.3547 17.3163C32.2137 17.1103 32.2137 15.8886 31.3547 15.6815L20.1339 12.9851C19.8272 12.9117 19.5872 12.6717 19.5127 12.3639L16.8163 1.14425C16.6103 0.28525 15.3886 0.28525 15.1815 1.14425L12.4851 12.365C12.4117 12.6717 12.1717 12.9117 11.8639 12.9862L0.644251 15.6826C-0.21475 15.8886 -0.21475 17.1103 0.644251 17.3174L11.865 20.0138C12.1717 20.0872 12.4117 20.3272 12.4862 20.635L15.1826 31.8557C15.3886 32.7147 16.6103 32.7147 16.8174 31.8557L19.5138 20.635C19.5872 20.3261 19.8272 20.0872 20.1339 20.0127Z"
+                  />
+                </svg>
               </div>
-              <p className="font-medium xl:mt-6 xl:text-2xl xl:leading-[3.532rem]">
+              <p className="font-medium text-center text-[0.875rem] leading-[2rem] mt-4 md:mt-0 md:text-base md:leading-[2.4rem] md:text-start lg:leading-[2rem] xl:mt-6 xl:text-2xl xl:leading-[3.5rem] 2xl:leading-[4rem]">
                 Seorang Marketing, Customer Service, Social Media, Content
                 Creator
               </p>
-              <div className="flex flex-row xl:mt-8 xl:gap-4">
+              <div className="flex flex-row mt-8 items-center justify-center gap-3 md:mt-5 md:mx-0 md:justify-start md:gap-2 lg:gap-4 xl:mt-8 xl:gap-4 2xl:gap-8">
                 <div
                   aria-label="linkedin-socialmedia-icons"
-                  className="rounded-full bg-cream-web xl:p-5"
+                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="xl:w-9"
+                    className="w-8 md:w-6 xl:w-9 2xl:w-11"
                     viewBox="0 0 34 34"
                     fill="none"
                   >
@@ -46,11 +55,11 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="instagramn-socialmedia-icons"
-                  className="rounded-full bg-cream-web p-5"
+                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="xl:w-[2.085rem]"
+                    className="w-7 md:w-6 xl:w-[2.085rem] 2xl:w-11"
                     viewBox="0 0 34 34"
                     fill="none"
                   >
@@ -62,11 +71,11 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="gmail-socialmedia-icons"
-                  className="rounded-full bg-cream-web xl:p-5"
+                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-[2.35rem]"
+                    className="w-8 md:w-6 xl:w-[2.35rem] 2xl:w-11"
                     viewBox="0 0 38 38"
                     fill="none"
                   >
@@ -78,11 +87,11 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="whatsapp-socialmedia-icons"
-                  className="rounded-full bg-cream-web xl:p-5"
+                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-[2.4rem]"
+                    className="w-8 md:w-6 xl:w-[2.4rem] 2xl:w-11"
                     viewBox="0 0 38 38"
                     fill="none"
                   >
@@ -95,8 +104,8 @@ export const IntroductionDiva = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-7">
-            <p className="font-semibold text-[#878680] z-50 xl:text-lg xl:leading-[2.6rem]">
+          <div className="col-span-12 mt-8 md:mt-0 md:col-span-7 md:self-start">
+            <p className="font-semibold text-[#878680] z-50 text-center text-xs leading-[1.8rem] md:text-start md:text-[0.6rem] md:leading-[1.8rem] lg:text-[1rem] xl:text-lg xl:leading-[2.6rem] 2xl:text-[1.4rem] 2xl:leading-[3rem] min-[1650px]:text-[1.5rem] min-[1650px]:leading-[3.2rem]">
               Lulusan baru S1 dari Sekolah Tinggi Ilmu Ekonomi Pasundan dengan
               spesialisasi bidang Manajemen. Memiliki pengalaman bekerja selama
               5 tahun sebagai Staff Admin Marketing dan Customer Service Officer
@@ -110,11 +119,10 @@ export const IntroductionDiva = () => {
           </div>
         </div>
       </div>
-      <div className="absolute xl:right-0 xl:-top-28 z-10">
+      <div className="absolute hidden md:block md:right-0 md:-top-20 xl:right-0 xl:-top-28 z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="311"
-          height="311"
+          className="md:w-56 lg:w-72"
           viewBox="0 0 311 311"
           fill="none"
         >

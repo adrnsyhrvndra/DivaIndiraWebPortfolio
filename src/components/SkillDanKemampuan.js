@@ -5,16 +5,16 @@ import { CardSkills } from "../components/subcomponents/cardSkills";
 export const SkillDanKemampuan = () => {
   return (
     <>
-      <div className="xl:mt-40 xl:px-28">
+      <div className="mt-16 px-4 xl:mt-32 xl:px-28">
         <div>
-          <h5 className="text-2xl font-normal text-center">
+          <h5 className="font-normal text-center text-[0.7rem] md:text-[1.1rem] lg:text-[1.3rem] xl:text-2xl 2xl:text-3xl">
             Faktor Pertimbangan Untuk Bapak/Ibu
           </h5>
         </div>
-        <div className="flex flex-row xl:gap-6 xl:mt-6 xl:mx-auto w-fit">
+        <div className="flex flex-row mx-auto justify-center items-center gap-3 mt-1 min-[550px]:mt-2 min-[550px]:gap-4 lg:mt-3 lg:gap-5 xl:gap-6 xl:mt-6 xl:mx-auto w-fit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="xl:w-12"
+            className="w-4 md:w-[2rem] lg:w-[2.2rem] xl:w-12"
             viewBox="0 0 49 49"
             fill="none"
           >
@@ -23,12 +23,12 @@ export const SkillDanKemampuan = () => {
               fill="#EF713F"
             />
           </svg>
-          <h2 className="font-black text-[#35352F] xl:text-6xl">
+          <h2 className="font-black text-[#35352F] text-center text-[1.4rem] min-[550px]:text-3xl md:text-[2.4rem] lg:text-[2.7rem] xl:text-6xl 2xl:text-7xl">
             Skill dan Kemampuan
           </h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="xl:w-12"
+            className="w-4 md:w-[2rem] lg:w-[2.2rem] xl:w-12"
             viewBox="0 0 49 49"
             fill="none"
           >
@@ -39,15 +39,20 @@ export const SkillDanKemampuan = () => {
           </svg>
         </div>
         <div aria-label="tabs-skill-dan-kemampuan">
-          <div aria-label="tabs-list" className="w-full rounded-[1.1rem] bg-[#FAF1F1] flex flex-row justify-center items-center xl:gap-[5.5rem] xl:py-6 xl:mt-[5.5rem]">
-              <div aria-label="tabs-all-skills active" className="cursor-pointer bg-[#2F251D] rounded-[1.1rem] font-semibold text-white xl:px-6 xl:py-6 xl:text-2xl min-[1440px]:text-3xl">All Skils</div>
-              <div aria-label="tabs-all-skills" className="cursor-pointer bg-[#F9F9F9] rounded-[1.1rem] font-medium xl:px-6 xl:py-6 xl:text-2xl min-[1440px]:text-3xl">Hard Skils</div>
-              <div aria-label="tabs-all-skills" className="cursor-pointer bg-[#F9F9F9] rounded-[1.1rem] font-medium xl:px-6 xl:py-6 xl:text-2xl min-[1440px]:text-3xl">Soft Skils</div>
-              <div aria-label="tabs-all-skills" className="cursor-pointer bg-[#F9F9F9] rounded-[1.1rem] font-medium xl:px-6 xl:py-6 xl:text-2xl min-[1440px]:text-3xl">Linguistik Skils</div>
+          <div aria-label="tabs-list" className="w-full bg-[#FAF1F1] rounded-[0.4rem] flex flex-row justify-center items-center gap-4 py-2 px-4 mt-8 min-[450px]:justify-evenly md:justify-center md:py-4 md:gap-12 md:px-0 lg:mt-10 lg:gap-1 lg:justify-evenly xl:py-6 xl:rounded-[1.1rem] xl:mt-[3rem] 2xl:mt-[3.5rem]">
+              <div aria-label="tabs-all-skills active" className="cursor-pointer text-center bg-[#2F251D] font-semibold text-white px-2 py-2 text-[0.5rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl">All Skils</div>
+              <div aria-label="tabs-all-skills" className="cursor-pointer text-center bg-[#F9F9F9] font-medium px-2 py-2 text-[0.5rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl">Hard Skils</div>
+              <div aria-label="tabs-all-skills" className="cursor-pointer text-center bg-[#F9F9F9] font-medium px-2 py-2 text-[0.5rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl">Soft Skils</div>
+              <div aria-label="tabs-all-skills" className="cursor-pointer text-center bg-[#F9F9F9] font-medium px-2 py-2 text-[0.5rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl">Linguistik Skils</div>
           </div>
         </div>
-        <div aria-label="cards-skill-dan-kemampuan" className="xl:mt-20">
-          <div className="grid grid-cols-12 xl:gap-11">
+        <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
+          <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
+            <CardSkills/>
+            <CardSkills/>
+            <CardSkills/>
+            <CardSkills/>
+            <CardSkills/>
             <CardSkills/>
           </div>
         </div>

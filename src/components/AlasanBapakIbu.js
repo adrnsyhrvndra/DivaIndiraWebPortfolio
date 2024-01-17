@@ -1,21 +1,21 @@
 import * as React from "react";
 import divaAalasan from "../img/diva-alasanskills.png";
-import iconAlasan01 from "../img/icon-alasan.png";
 import arrowAlasan from "../img/arrow-icon.png";
+import { CardAlasan } from "./subcomponents/cardAlasan";
 
 export const AlasanBapakIbu = () => {
   return (
     <div aria-label="alasan-bapak-ibu-memilih-saya">
-      <div className="grid grid-cols-12 xl:mt-24">
-        <div className="col-span-12">
-          <div className="flex flex-col items-center justify-center xl:gap-6">
-            <h4 className="text-center text-[#35352F] xl:text-3xl">
+      <div className="grid grid-cols-12 md:mt-24 xl:gap-4 min-[1450px]:mt-10 2xl:mt-40">
+        <div className="col-span-12 order-2 mt-8 md:mt-0 md:order-1">
+          <div className="flex flex-col items-center justify-center gap-3 md:gap-4 xl:gap-6">
+            <h4 className="text-center font-medium text-[#35352F] md:text-[1.9rem] xl:text-3xl 2xl:text-4xl min-[1700px]:text-5xl">
               Ini alasan Bapak/Ibu
             </h4>
-            <div className="flex flex-row text-center items-center xl:gap-10">
+            <div className="flex flex-row text-center justify-center items-center gap-6 xl:gap-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="xl:w-12"
+                className="w-5 md:w-11 xl:w-12"
                 viewBox="0 0 48 49"
                 fill="none"
               >
@@ -24,12 +24,12 @@ export const AlasanBapakIbu = () => {
                   fill="#EF713F"
                 />
               </svg>
-              <h2 className="font-black text-[#35352F] xl:text-6xl">
+              <h2 className="font-black text-[#35352F] text-2xl md:text-[3.5rem] xl:text-6xl 2xl:text-7xl">
                 Harus Memilih Saya
               </h2>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="xl:w-12"
+                className="w-5 md:w-11 xl:w-12 "
                 viewBox="0 0 48 49"
                 fill="none"
               >
@@ -41,128 +41,25 @@ export const AlasanBapakIbu = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-5 self-end xl:mt-24 xl:px-2">
-          <img className="xl:w-[95%] mr-auto" src={divaAalasan} alt="" />
+        <div className="col-span-12 self-end order-1 mt-10 md:order-2 lg:col-span-6 lg:self-end min-[1150px]:mt-16 xl:col-span-5 xl:mt-24 xl:px-2">
+          <img className="mx-auto md:w-[75%] xl:w-[95%] mr-auto" src={divaAalasan} alt="" />
         </div>
-        <div className="col-span-7 xl:mt-24 xl:px-2">
+        <div className="col-span-12 mt-6 lg:col-span-6 lg:self-end xl:col-span-7 md:mt-16 xl:mt-24 xl:px-2 order-3 md:order-3">
           <div
             aria-label="pembungkus-alasan-utama"
-            className="flex flex-col xl:gap-4"
+            className="flex flex-col gap-2 xl:gap-4"
           >
-            <div className="flex flex-row xl:gap-4">
-              <div
-                aria-label="card-alasan-01"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md xl:p-6"
-              >
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex-1 items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="break-words font-black xl:text-3xl">
-                      Keterampilan Komunikasi
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Kemampuan untuk berkomunikasi secara efektif, baik lisan
-                  maupun tertulis, dengan berbagai pihak termasuk rekan kerja,
-                  klien/customer, dan atasan
-                </p>
-              </div>
-              <div
-                aria-label="card-alasan-02"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md relative xl:p-6"
-              >
-                <img
-                  className="absolute -z-30 xl:w-44 xl:-right-4 xl:-top-24"
-                  src={arrowAlasan}
-                  alt=""
-                />
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex-1 items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="break-words font-black xl:text-3xl">
-                      Kemampuan Beradaptasi
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Mampu beradaptasi dengan cepat dalam situasi yang berubah dan
-                  mampu menghadapi tantangan dengan fleksibilitas
-                </p>
-              </div>
+            <div className="flex flex-col gap-2 md:flex-row xl:gap-4">
+              <CardAlasan/>
+              <CardAlasan/>
             </div>
-            <div className="flex flex-row xl:gap-4">
-              <div
-                aria-label="card-alasan-01"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md xl:p-6"
-              >
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex- items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="break-words font-black xl:text-3xl">
-                      Keterampilan Manajemen
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Mampu mengatur waktu dengan efisien, mengelola deadline, dan
-                  mengatur prioritas tugas dengan baik
-                </p>
-              </div>
-              <div
-                aria-label="card-alasan-02"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md xl:p-6"
-              >
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex-1 items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="break-words font-black xl:text-3xl">
-                      Kerjasama Tim
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Mampu bekerja dalam tim dengan anggota tim yang beragam dan
-                  berkontribusi secara aktif untuk mencapai tujuan bersama
-                </p>
-              </div>
+            <div className="flex flex-col gap-2 md:flex-row xl:gap-4">
+              <CardAlasan/>
+              <CardAlasan/>
             </div>
-            <div className="flex flex-row xl:gap-4">
-              <div
-                aria-label="card-alasan-01"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md xl:p-6"
-              >
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex-1 items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="break-words font-black xl:text-3xl">
-                      Kemampuan Analisis
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Mampu menganalisis data dan informasi untuk mengambil
-                  keputusan yang tepat dan mendukung perencanaan strategis
-                </p>
-              </div>
-              <div
-                aria-label="card-alasan-02"
-                className="flex flex-col flex-1 bg-[#F4ECEC] rounded-md xl:p-6"
-              >
-                <div className="flex flex-row xl:gap-8">
-                  <div className="flex flex-row flex-1 items-center xl:gap-4">
-                    <img src={iconAlasan01} alt="" />
-                    <h3 className="text-3xl break-words font-black">
-                      Resolusi Konflik
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-[#8B887C] xl:mt-3 xl:text-sm xl:leading-relaxed">
-                  Mampu menghadapi konflik dengan bijaksana, mencari solusi yang
-                  saling menguntungkan, dan menciptakan lingkungan kerja yang
-                  harmonis
-                </p>
-              </div>
+            <div className="flex flex-col gap-2 md:flex-row xl:gap-4">
+              <CardAlasan/>
+              <CardAlasan/>
             </div>
           </div>
         </div>
