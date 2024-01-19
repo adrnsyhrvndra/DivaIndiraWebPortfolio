@@ -1,13 +1,15 @@
 import * as React from "react";
-import imageDivas from "../img/divacircle.png";
 
 export const ContactMe = () => {
-  return (
+
+      let imageDivaFomr = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705661243/divaWebPortfolio/reduceResolution/FomDiva_nnv4kf.png";
+
+      return (
             <>
                   <div className="xl:mt-32 xl:px-10">
                         <div className="grid grid-cols-12 lg:gap-4 xl:gap-14">
                               <div className="col-span-12 mt-16 md:mt-24 lg:col-span-6 lg:self-center">
-                                    <img className="w-[85%] mx-auto md:w-[70%] lg:w-[90%]" src={imageDivas} alt="" />
+                                    <img className="w-[85%] mx-auto md:w-[70%] lg:w-[90%]" src={imageDivaFomr} alt="" />
                               </div>
                               <div className="col-span-12 mt-10 px-4 md:px-16 md:mt-20 lg:col-span-6 lg:px-0 lg:self-start">
                                     <div className="flex flex-row justify-center items-center gap-6 md:gap-10 lg:gap-6 lg:justify-start xl:gap-8">

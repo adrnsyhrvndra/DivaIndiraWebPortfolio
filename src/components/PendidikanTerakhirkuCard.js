@@ -2,7 +2,7 @@ import * as React from "react";
 
 export const PendidikanTerakhkirkuCard = () => {
   return (
-    <div aria-label="pendidikan-terakhirku" className="mt-[-6.5rem] mx-auto md:mt-[-4rem] xl:mt-[-6.5rem] bg-red-800">
+    <div aria-label="pendidikan-terakhirku" className="mt-[-6.5rem] mx-auto md:mt-[-4rem] xl:mt-[-6.5rem]">
       <div
         aria-label="kotak-cta-pendidikan-terakhir-orange"
         className="bg-orange-web relative overflow-hidden py-10 px-6 md:pl-20 md:pr-14 md:py-10 min-[820px]:pl-[19%] min-[900px]:pl-[20%] xl:pl-[15%] min-[1400px]:pl-[17%] min-[1500px]:pl-[18%] 2xl:pl-[19%]"

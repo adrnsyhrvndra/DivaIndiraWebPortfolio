@@ -1,28 +1,19 @@
 import * as React from "react";
-import logoweb from "../img/diva-logoweb.png";
+import { NavMenuUl } from "./subcomponents/NavMenu/navMenu";
 
 
 export const Navbar = () => {
+  
+  let logoWebs = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705578132/divaWebPortfolio/logoWebs/logoDivaWebs_hbzvel.png";
+
   return (
     <div
       aria-label="navbar"
       className="bg-bg-web flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-5 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14"
     >
-      <img className="order-1 md:order-2 md:w-24 lg:order-1 w-28 lg:w-36 xl:w-44 2xl:w-64" src={logoweb} alt="logo-web-diva" />
-      <div className="hidden flex-row items-center md:order-3 md:flex lg:order-2 lg:gap-[2.2rem] xl:gap-[4.5rem] min-[1400px]:gap-[4.8rem]">
-        <div aria-label="nav-menu" className="hidden lg:block">
-          <ul className="list-none flex flex-row text-slate-400 items-center lg:gap-8 min-[1110px]:gap-12 xl:gap-16 min-[1400px]:gap-20 min-[1500px]:gap-24 2xl:gap-20 min-[1600px]:gap-[5.5rem] min-[1700px]:gap-[6.5rem] min-[1800px]:gap-[7.5rem]">
-            <li className="font-bold bg-cream-web text-coklat-home tracking-wider lg:px-4 lg:py-1 lg:text-base xl:px-4 xl:py-1 xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">
-              Home
-            </li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">About</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">Services</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">Portfolio</li>
-            <li className="font-normal tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl">
-              CV Download
-            </li>
-          </ul>
-        </div>
+      <img className="order-1 w-24 md:order-2 md:w-28 lg:order-1 xl:w-36 2xl:w-44" src={logoWebs} alt="logo-web-diva" />
+      <div className="hidden flex-row items-center md:order-3 md:flex lg:order-2 lg:gap-[2rem] xl:gap-[4.3rem] min-[1400px]:gap-[4.6rem]">
+        <NavMenuUl/>
         <div
           aria-label="button-contact-me"
           className="hidden md:flex flex-row items-center rounded-full bg-coklat-web md:gap-1 md:py-2 md:px-4 lg:gap-2 lg:px-6 lg:py-2 xl:gap-2 xl:px-6 xl:py-2"

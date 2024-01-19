@@ -1,7 +1,6 @@
 import * as React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-// import WorkIcon from '@material-ui/icons/Work';
 import smkn from "../img/SMKN.png";
 import stiepas from "../img/STIEPAS.png";
 import yogya from "../img/yogya.png";
@@ -9,6 +8,8 @@ import habbats from "../img/habbats.png";
 import graphic1 from "../img/elements (1).png";
 import graphic2 from "../img/elements (2).png";
 import '../customcss/customvertical.css';
+import { CardPengalamanKerja } from "./subcomponents/PengalamanKerja/pengalamanKerjaCard";
+// import WorkIcon from '@material-ui/icons/Work';
 
 export const PengalamanKerjaTimeline = () => {
   return (
@@ -33,23 +34,7 @@ export const PengalamanKerjaTimeline = () => {
             </div>
             <div className="mt-14 xl:mt-20 2xl:mt-24">
                   <VerticalTimeline className="vertical-timeline-custom-line">
-                        <VerticalTimelineElement
-                              className="vertical-timeline-element--work relative"
-                              contentStyle={{ background: '#232323', color: '#fff'}}
-                              contentArrowStyle={{ borderRigth: '20px solid  #FCFCFC' }}
-                              date={
-                                    <span className="text-[0.6rem] md:text-[0.8rem] lg:text-lg xl:ml-4 xl:text-xl">Desember 2016 - Maret 2019</span>
-                              }
-                              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                              icon={
-                                    <img src={smkn} className="w-full" alt="" />
-                              }
-                        >
-                              
-                              <h3 className="vertical-timeline-element-title font-black text-[1rem] md:text-[1.3rem] lg:text-2xl">SMK Negeri 1 Bandung</h3>
-                              <h4 className="vertical-timeline-element-subtitle font-normal pt-2 text-[0.6rem] md:text-[0.8rem] lg:text-lg xl:pt-2 xl:text-sm">Jurusan Pemasaran</h4>
-                              <div className="w-[100%] z-50 bg-orange-web absolute right-0 -bottom-[3px] h-1 rounded-b-[1px"></div>
-                        </VerticalTimelineElement>
+                        <CardPengalamanKerja namaInstitute="SMKN 1 Bandung" subRole="Jurusan Manajemen" date="Desember 2016 - Maret 2019"/>
                         <VerticalTimelineElement
                               className="vertical-timeline-element--work relative"
                               contentStyle={{ background: '#232323', color: '#fff'}}

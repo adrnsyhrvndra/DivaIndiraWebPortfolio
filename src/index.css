@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .active-nav {
+    @apply font-medium px-4 py-2 bg-cream-web text-coklat-home tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl cursor-pointer;
+  }
+  .default-nav {
+    @apply font-medium px-4 py-2 tracking-wider lg:text-sm xl:text-base 2xl:text-lg min-[1700px]:text-xl min-[1800px]:text-2xl cursor-pointer;
+  }
+  .tabsList{
+    @apply w-full bg-[#FAF1F1] rounded-[0.4rem] flex flex-row justify-center items-center gap-3 py-2 px-4 mt-4 min-[450px]:justify-evenly md:justify-center md:py-4 md:gap-12 md:px-0 lg:mt-10 lg:gap-1 lg:justify-evenly xl:py-6 xl:rounded-[1.1rem] xl:mt-[3rem] 2xl:mt-[3.5rem]
+  }
+  .tabsChildPanelListActive{
+    @apply cursor-pointer text-center bg-[#2F251D] font-semibold text-white px-2 py-2 text-[0.4rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl;
+  }
+  .tabsChildPanelList{
+    @apply cursor-pointer text-center bg-[#F9F9F9] font-medium text-[#525252] px-2 py-2 text-[0.4rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
