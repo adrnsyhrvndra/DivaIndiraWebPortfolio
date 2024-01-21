@@ -16,9 +16,7 @@ export const TabsSkill = () => {
             <>
                   <div aria-label="tabs-skill-dan-kemampuan">
                         <Tabs aria-label="tabs-list" defaultValue={1} selectionFollowsFocus>
-
                               <TabsList className="tabsList">
-
                                     <Tab 
                                           slotProps={{
                                                 root: ({ selected }) => ({

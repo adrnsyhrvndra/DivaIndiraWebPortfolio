@@ -1,7 +1,6 @@
 import * as React from "react";
 import { NavMenuUl } from "./subcomponents/NavMenu/navMenu";
 
-
 export const Navbar = () => {
   
   let logoWebs = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705578132/divaWebPortfolio/logoWebs/logoDivaWebs_hbzvel.png";

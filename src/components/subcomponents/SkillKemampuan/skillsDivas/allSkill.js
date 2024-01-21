@@ -3,6 +3,7 @@ import { ReactDOM } from "react";
 import { CardSkills } from "../../cardSkills";
 
 export const AllSkills = () => {
+  
   return (
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">

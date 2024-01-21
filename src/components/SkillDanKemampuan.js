@@ -1,6 +1,4 @@
 import * as React from "react";
-import { ReactDOM } from "react";
-import { CardSkills } from "../components/subcomponents/cardSkills";
 import { SubJudulSkill } from "./subcomponents/SkillKemampuan/subJudulSkill";
 import { JudulSkill } from "./subcomponents/SkillKemampuan/judulSkill";
 import { TabsSkill } from "./subcomponents/SkillKemampuan/tabsSkill";

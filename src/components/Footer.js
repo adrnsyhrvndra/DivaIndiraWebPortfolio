@@ -1,5 +1,4 @@
 import * as React from "react";
-import logoFooter from "../img/fotterslogo.png";
 
 export const Footer = () => {
       let logoWebs = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705578132/divaWebPortfolio/logoWebs/logoDivaWebs_hbzvel.png";
