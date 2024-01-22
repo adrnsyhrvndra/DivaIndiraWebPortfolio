@@ -15,15 +15,22 @@ export const LingustikSkills = () => {
   let iconLiveJualan = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705883808/divaWebPortfolio/iconSkills/Group_9325_sfd19u.png";
   let iconSupplyThrift = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705883809/divaWebPortfolio/iconSkills/Group_9327_zloyne.png";
 
+  // Icon Gambar Skills Brown
+  let iconIndonesiaBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890767/Group_9316_algrgl.png";
+  let iconInggrisBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890768/Group_9317_xe69it.png";
+  let iconSundaBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890769/Group_9318_qhhbej.png";
+  let iconLiveJualanBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890770/Group_9326_nmkb1g.png";
+  let iconSupplyBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890770/Group_9328_igbni1.png";
+  
   return (
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
             <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
-                <CardSkills icon={iconBahasaIndonesia} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
-                <CardSkills icon={iconBahasaInggris} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
-                <CardSkills icon={iconBahasaSunda} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
-                <CardSkills icon={iconLiveJualan} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
-                <CardSkills icon={iconSupplyThrift} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
+              <CardSkills icon={iconBahasaIndonesia} iconBrown={iconIndonesiaBrown} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
+              <CardSkills icon={iconBahasaInggris} iconBrown={iconInggrisBrown} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
+              <CardSkills icon={iconBahasaSunda} iconBrown={iconSundaBrown} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
+              <CardSkills icon={iconLiveJualan} iconBrown={iconLiveJualanBrown} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
+              <CardSkills icon={iconSupplyThrift} iconBrown={iconSupplyBrown} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
             </div>
       </div>
     </>

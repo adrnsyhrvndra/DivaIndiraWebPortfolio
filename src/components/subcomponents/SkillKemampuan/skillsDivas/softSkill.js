@@ -17,16 +17,24 @@ export const SoftSkills = () => {
   let iconAnalisis = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705883813/divaWebPortfolio/iconSkills/Group_9290_wxbqkt.png";
   let iconKnoflik = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705883813/divaWebPortfolio/iconSkills/Group_9294_uxlhpc.png";
 
+  // Icon Gambar Skills Brown
+  let iconKomunikasiBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890767/Group_9315_s67m0v.png";
+  let iconAdaptasiBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890747/Group_9309_jchoc2.png";
+  let iconTimeBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890765/Group_9311_vgfygv.png";
+  let iconKolaborasiBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890766/Group_9313_c3vchy.png";
+  let iconAnalisisBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890766/Group_9314_ckgbfg.png";
+  let iconResolusiBrown = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705890763/Group_9310_xxt9uw.png";
+
   return (
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
             <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
-                <CardSkills icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} skillJudul="Skill Komunikasi"/>
-                <CardSkills icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} skillJudul="Skill Adaptasi"/>
-                <CardSkills icon={iconTime} deskripsi={deskripsiTime} skillJudul="Time Management"/>
-                <CardSkills icon={iconTim} deskripsi={deskripsiKolaborasi} skillJudul="Kerjasama Tim"/>
-                <CardSkills icon={iconAnalisis} deskripsi={deskripsiAnalisis} skillJudul="Kemampuan Analisis"/>
-                <CardSkills icon={iconKnoflik} deskripsi={deskripsiKonflik} skillJudul="Penyelesaian Konflik"/>
+              <CardSkills icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} iconBrown={iconKomunikasiBrown} skillJudul="Skill Komunikasi"/>
+              <CardSkills icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} iconBrown={iconAdaptasiBrown} skillJudul="Skill Adaptasi"/>
+              <CardSkills icon={iconTime} deskripsi={deskripsiTime} iconBrown={iconTimeBrown} skillJudul="Time Management"/>
+              <CardSkills icon={iconTim} deskripsi={deskripsiKolaborasi} iconBrown={iconKolaborasiBrown} skillJudul="Kerjasama Tim"/>
+              <CardSkills icon={iconAnalisis} deskripsi={deskripsiAnalisis} iconBrown={iconAnalisisBrown} skillJudul="Kemampuan Analisis"/>
+              <CardSkills icon={iconKnoflik} deskripsi={deskripsiKonflik} iconBrown={iconResolusiBrown} skillJudul="Penyelesaian Konflik"/>
             </div>
       </div>
     </>
