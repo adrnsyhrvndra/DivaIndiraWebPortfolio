@@ -9,7 +9,7 @@ export const AlasanBapakIbu = () => {
   // Judul Card
   let titleCardAlasan01 = "Keterampilan Komunikasi";
   let titleCardAlasan02 = "Kemampuan Beradaptasi";
-  let titleCardAlasan03 = "Keterampilan Manajemen";
+  let titleCardAlasan03 = "Pengelolaan Waktu";
   let titleCardAlasan04 = "Kemampuan Kolaborasi";
   let titleCardAlasan05 = "Kemampuan Analisis";
   let titleCardAlasan06 = "Penyelesaian Konflik";
@@ -25,7 +25,7 @@ export const AlasanBapakIbu = () => {
   // Icon Image
   let iconCardAlasan01 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569895/divaWebPortfolio/iconAlasan/m309otxgwjradq7stdyj.png";
   let iconCardAlasan02 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569894/divaWebPortfolio/iconAlasan/bdrjl01yqf3sxmylizfo.png";
-  let iconCardAlasan03 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569895/divaWebPortfolio/iconAlasan/izjdph9yicfg1sn2erla.png";
+  let iconCardAlasan03 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705838862/divaWebPortfolio/iconAlasan/CLOCK_vic4qn.png";
   let iconCardAlasan04 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569893/divaWebPortfolio/iconAlasan/dxevizx2shiocszxckee.png";
   let iconCardAlasan05 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569897/divaWebPortfolio/iconAlasan/l9d9utortigjbmysxzme.png";
   let iconCardAlasan06 = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705569893/divaWebPortfolio/iconAlasan/nlvg1li5kt5v6dkmosoh.png";
