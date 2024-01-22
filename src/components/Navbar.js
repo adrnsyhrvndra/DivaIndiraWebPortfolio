@@ -1,14 +1,32 @@
 import * as React from "react";
 import { NavMenuUl } from "./subcomponents/NavMenu/navMenu";
+import { useState } from "react";
 
 export const Navbar = () => {
   
   let logoWebs = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705578132/divaWebPortfolio/logoWebs/logoDivaWebs_hbzvel.png";
+  let prevScrollY = 0; // Menyimpan posisi scroll sebelumnya
+
+  const [fixedNav,setFixedNav] = useState(false);
+
+  const cekApakahakungescrollkebawahNav = () =>{
+    
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY) {
+      setFixedNav(true);
+    } else {
+      setFixedNav(false);
+    }
+  }
+  window.addEventListener('scroll', cekApakahakungescrollkebawahNav);
 
   return (
     <div
       aria-label="navbar"
-      className="bg-bg-web flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-5 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14"
+      className={
+          fixedNav ? 'fixednav z-[999] transition-all' : 'defaultnav transition-all'
+        }
     >
       <img className="order-1 w-24 md:order-2 md:w-28 lg:order-1 xl:w-36 2xl:w-44" src={logoWebs} alt="logo-web-diva" />
       <div className="hidden flex-row items-center md:order-3 md:flex lg:order-2 lg:gap-[2rem] xl:gap-[4.3rem] min-[1400px]:gap-[4.6rem]">
