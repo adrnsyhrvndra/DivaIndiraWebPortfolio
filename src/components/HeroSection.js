@@ -7,7 +7,7 @@ const LazyImage = lazy(() => import("./LazyImage"));
 
 export const HeroSection = () => {
 
-  let mobileImageDivas = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705661264/divaWebPortfolio/reduceResolution/Mobile_ghyjau.png";
+  let mobileImageDivas = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705917997/divaWebPortfolio/reduceResolution/Group_9267_y9y1cr.png";
   let tabletPcDivaImages = "https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1705661272/divaWebPortfolio/reduceResolution/Desktop_x5jtbk.png";
 
   return (

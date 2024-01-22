@@ -19,10 +19,13 @@
     @apply cursor-pointer text-center bg-[#F9F9F9] font-medium text-[#525252] px-2 py-2 text-[0.4rem] rounded-[0.4rem] min-[520px]:text-[0.7rem] md:px-4 md:py-3 md:text-[1.2rem] lg:text-[1.3rem] lg:px-7 xl:px-6 xl:py-6 xl:text-2xl xl:rounded-[1.1rem] min-[1440px]:text-3xl;
   }
   .fixednav{
-    @apply bg-[#ffffff] fixed z-[999] top-0 w-full left-0 shadow-lg flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-8 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-20 xl:pt-6 xl:pb-8 xl:px-24;
+    @apply bg-[#ffffff] fixed z-[800] top-0 w-screen left-0 shadow-lg flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-8 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-20 xl:pt-6 xl:pb-8 xl:px-24;
   }
   .defaultnav{
-    @apply bg-bg-web flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-5 md:pt-4 md:pb-4 md:px-16 lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14;
+    @apply bg-bg-web flex justify-between flex-row items-center border-b-[2px] pt-6 pb-6 px-5 md:pt-4 md:pb-4 lg:pt-6 lg:pb-8 lg:px-14 xl:pt-6 xl:pb-8 xl:px-14;
+  }
+  .NavMobileTablet{
+    @apply fixed top-0 left-0 w-full h-fit bg-[#17120E] z-[999] px-4 pt-5 pb-16 lg:hidden;
   }
 }
 
