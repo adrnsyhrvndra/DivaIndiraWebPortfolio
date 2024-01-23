@@ -1,7 +1,5 @@
 import * as React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
-import { ReactDOM } from "react";
 
 export const CardSkills = (tangkapProps) => {
   const [trueIconHover,settrueIconHover] = useState(false);

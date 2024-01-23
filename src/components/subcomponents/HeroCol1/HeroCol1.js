@@ -68,23 +68,25 @@ export const HeroCol1 = () => {
         </p>
       </div>
       <div className="flex flex-row justify-center items-center mt-6 gap-5 md:mt-8 lg:justify-start xl:gap-6 xl:mt-6 2xl:mt-10">
-        <div
-          aria-label="lets-talk"
-          className="bg-[#17120E] text-white flex flex-row items-center px-2 py-2 rounded-[0.29rem] md:px-4 md:py-4 md:gap-2 lg:rounded-lg xl:px-6 xl:py-4 xl:gap-2 2xl:gap-4"
-        >
-          <p className="text-[0.7rem] md:text-[1.25rem] lg:text-[1rem] min-[1440px]:text-[1.4rem] 2xl:text-[1.6rem] min-[1700px]:text-[1.8rem]">Let's talk</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 min-[1440px]:w-8"
-            viewBox="0 0 24 24"
-            fill="none"
+        <a href="https://wa.link/82x108" target="_blank" rel="noreferrer">
+          <div
+            aria-label="lets-talk"
+            className="bg-[#17120E] text-white flex flex-row items-center px-2 py-2 rounded-[0.29rem] hover:opacity-65 md:px-4 md:py-4 md:gap-2 lg:rounded-lg xl:px-6 xl:py-4 xl:gap-2 2xl:gap-4"
           >
-            <path
-              d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z"
-              fill="white"
-            />
-          </svg>
-        </div>
+            <p className="text-[0.7rem] md:text-[1.25rem] lg:text-[1rem] min-[1440px]:text-[1.4rem] 2xl:text-[1.6rem] min-[1700px]:text-[1.8rem]">Let's talk</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 min-[1440px]:w-8"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </a>
         <div
           aria-label="view-linkedin"
           className="flex flex-row items-center justify-center border-[2px] border-coklat-web rounded-[0.29rem] px-2 py-2 gap-2 md:px-4 md:py-4 md:gap-2 lg:rounded-lg xl:gap-2 xl:px-6 xl:py-4 2xl:px-8"
@@ -93,7 +95,7 @@ export const HeroCol1 = () => {
             href="https://www.linkedin.com/in/diva-indira-asauri-a0b4482a5/"
             target="_blank"
             rel="noreferrer"
-            className="text-[0.7rem] font-semibold md:text-[1.25rem] lg:text-[1rem] min-[1440px]:text-[1.4rem] 2xl:text-[1.6rem] min-[1700px]:text-[1.8rem]"
+            className="text-[0.7rem] font-semibold hover:opacity-65 md:text-[1.25rem] lg:text-[1rem] min-[1440px]:text-[1.4rem] 2xl:text-[1.6rem] min-[1700px]:text-[1.8rem]"
           >
             View's linkedin
           </a>

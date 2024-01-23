@@ -21,12 +21,12 @@ export const HeroSection = () => {
           <LazyImage
             src={tabletPcDivaImages}
             alt="image-for-laptop"
-            className="hidden md:block md:w-[80%] md:mx-auto lg:w-full"
+            className="hidden md:block md:w-[80%] scale-100 transition-all cursor-pointer hover:scale-110 md:mx-auto lg:w-full"
           />
           <LazyImage
             src={mobileImageDivas}
             alt="image-for-mobile"
-            className="w-[90%] mx-auto md:hidden"
+            className="w-[90%] scale-100 transition-all cursor-pointer hover:scale-110 mx-auto md:hidden"
           />
         </Suspense>
       </div>

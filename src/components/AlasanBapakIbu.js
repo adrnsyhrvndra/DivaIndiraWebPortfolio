@@ -3,8 +3,21 @@ import divaAalasan from "../img/diva-alasanskills.png";
 import arrowAlasan from "../img/arrow-icon.png";
 import { CardAlasan } from "./subcomponents/Alasan/cardAlasan";
 import { JudulAlasan } from "./subcomponents/Alasan/judulAlasan";
+import { Tilt } from 'react-tilt';
 
 export const AlasanBapakIbu = () => {
+
+  const defaultOptions = {
+    reverse:        false,  // reverse the tilt direction
+    max:            35,     // max tilt rotation (degrees)
+    perspective:    2000,   // Transform perspective, the lower the more extreme the tilt gets.
+    speed:          2000,   // Speed of the enter/exit transition
+    scale:          0.9,    // 2 = 200%, 1.5 = 150%, etc..
+    transition:     true,   // Set a transition on enter/exit.
+    axis:           null,   // What axis should be disabled. Can be X or Y.
+    reset:          true,    // If the tilt effect has to be reset on exit.
+    easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+  };
 
   // Judul Card
   let titleCardAlasan01 = "Keterampilan Komunikasi";
@@ -40,7 +53,9 @@ export const AlasanBapakIbu = () => {
           <JudulAlasan/>
         </div>
         <div className="col-span-12 self-end order-1 mt-10 md:order-2 lg:col-span-6 lg:self-end min-[1150px]:mt-16 xl:col-span-5 xl:mt-24 xl:px-2">
-          <img className="mx-auto md:w-[75%] xl:w-[95%] mr-auto" src={imageDivase} alt="" />
+          <Tilt options={defaultOptions}>
+            <img className="cursor-pointer mx-auto md:w-[75%] xl:w-[95%] mr-auto" src={imageDivase} alt="" />
+          </Tilt>
         </div>
         <div className="col-span-12 mt-6 lg:col-span-6 lg:self-end xl:col-span-7 md:mt-16 xl:mt-24 xl:px-2 order-3 md:order-3">
           <div
