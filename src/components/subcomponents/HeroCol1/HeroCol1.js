@@ -1,7 +1,21 @@
 import * as React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import TextTransition, { presets } from 'react-text-transition';
 
+const textSubheads = ['Customer Service & Marketing', 'Livestreaming Host Social media', 'Social Media Savy Person', 'Sales Representative Customer'];
 
 export const HeroCol1 = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      1500, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, [])
+  
 
   return (
     <div
@@ -20,8 +34,8 @@ export const HeroCol1 = () => {
             fill="#333232"
           />
         </svg>
-        <h5 className="uppercase text-[#928787] font-bold text-[0.625rem] tracking-[0.16875rem] md:text-[1rem] md:tracking-[0.2rem] lg:text-[0.8rem] lg:tracking-[0.2rem] xl:tracking-[0.219rem] xl:text-sm 2xl:text-base min-[1600px]:text-lg">
-          Customer Service & Marketing
+        <h5 className="uppercase text-[#928787] font-bold tracking-[0.16875rem] text-[0.5rem] min-[500px]:text-[0.65rem] md:text-[1rem] md:tracking-[0.2rem] lg:text-[0.8rem] lg:tracking-[0.2rem] xl:tracking-[0.219rem] xl:text-sm 2xl:text-base min-[1600px]:text-lg">
+          <TextTransition springConfig={presets.wobbly}>{textSubheads[index % textSubheads.length]}</TextTransition>
         </h5>
         <svg
           xmlns="http://www.w3.org/2000/svg"
