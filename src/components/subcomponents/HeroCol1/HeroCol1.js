@@ -2,6 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import TextTransition, { presets } from 'react-text-transition';
+import CountUp from 'react-countup';
 
 const textSubheads = ['Customer Service & Marketing', 'Livestreaming Host Social media', 'Social Media Savy Person', 'Sales Representative Customer'];
 
@@ -60,14 +61,18 @@ export const HeroCol1 = () => {
         className="bg-black text-white flex flex-row justify-center z-50 mx-auto gap-5 mt-6 rounded-[0.65rem] w-fit px-6 min-[400px]:w-[80%] md:mt-10 md:w-fit md:gap-9 md:px-14 md:rounded-[1rem] md:py-7 lg:mt-6 lg:mx-0 lg:px-8 lg:gap-5 lg:w-fit min-[1130px]:px-12 xl:gap-8 xl:w-[110%] xl:mt-8 xl:py-10 min-[1440px]:gap-12 xl:rounded-2xl 2xl:w-[115%] 2xl:py-12 min-[1700px]:w-[120%]"
       >
         <div className="flex flex-row items-center gap-3 md:gap-9 lg:gap-3 xl:gap-4 2xl:gap-6">
-          <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">5</h2>
+          <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">
+            <CountUp end={5} duration={6} />
+          </h2>
           <h4 className="text-[0.95rem] leading-[1rem] min-[500px]:leading-[1.1rem] min-[500px]:text-base md:text-[1.9rem] md:leading-[1.8rem] lg:text-[1.5rem] lg:leading-[1.5rem] xl:text-2xl min-[1440px]:text-[1.9rem] 2xl:leading-[2.3rem] min-[1700px]:text-[2.3rem] min-[1900px]:text-[2.5rem] min-[1900px]:leading-[2.5rem]">
             Tahun <br />
             Pengalaman
           </h4>
         </div>
         <div className="flex flex-row items-center gap-3 md:gap-9 lg:gap-3 xl:gap-4 2xl:gap-6">
-          <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">2</h2>
+          <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">
+            <CountUp end={2} duration={5} />
+          </h2>
           <h4 className="text-[0.95rem] leading-[1rem] min-[500px]:leading-[rem] min-[500px]:text-base md:text-[1.9rem] md:leading-[1.8rem] lg:text-[1.5rem] lg:leading-[1.5rem] xl:text-2xl min-[1440px]:text-[1.9rem] 2xl:leading-[2.3rem] min-[1700px]:text-[2.3rem] min-[1900px]:text-[2.5rem] min-[1900px]:leading-[2.5rem]">
             Perusahaan <br />
             Ditempati
