@@ -13,7 +13,6 @@ import {SkillDanKemampuan} from './components/SkillDanKemampuan';
 import {WorkTogetherAndCv} from './components/WorkTogetherAndCv';
 import {ContactMe} from './components/ContactMe';
 import {Footer} from './components/Footer';
-import NavbarMobileTablet from "./components/NavbarMobileTablet";
 
 export default function App() {
 
@@ -24,7 +23,7 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 7500);
+    }, 7000);
   }, []);
 
   return (
@@ -50,7 +49,7 @@ export default function App() {
         <div className="overflow-x-hidden">
           <div aria-label="navbar-and-herosection" className="bg-bg-web pb-36 mx-auto px-4 md:px-6 lg:pb-0 lg:px-6 xl:px-8 2xl:px-16">
             <Navbar/>
-            <HeroSection/>
+            <HeroSection />
           </div>
           <div className="mx-auto px-4 md:px-6 lg:px-10 xl:px-12 2xl:px-20">
             <PendidikanTerakhkirkuCard/>

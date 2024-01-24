@@ -2,7 +2,7 @@ import * as React from "react";
 import { ReactDOM } from "react";
 import { CardSkills } from "../../cardSkills";
 
-export const LingustikSkills = () => {
+export const LingustikSkills = (props) => {
   let deskripsiIndonesia = "Sebagai bahasa resmi dan nasional Indonesia, menjadi alat komunikasi utama untuk lebih dari 270 juta penduduk, dengan keberagaman dan kekayaan kultural.";
   let deskripsiInggris = "Bahasa Inggris sebagai jembatan yang menghubungkan orang di seluruh dunia. Dengan banyaknya penutur, bahasa ini memfasilitasi komunikasi internasional";
   let deskripsiSunda = "Bahasa Sunda, bahasa daerah di Indonesia, mengandung keindahan dan kekayaan budaya Jawa Barat. Digunakan oleh jutaan orang, memperkaya identitas lokal.";
@@ -26,11 +26,11 @@ export const LingustikSkills = () => {
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
             <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
-              <CardSkills icon={iconBahasaIndonesia} iconBrown={iconIndonesiaBrown} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
-              <CardSkills icon={iconBahasaInggris} iconBrown={iconInggrisBrown} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
-              <CardSkills icon={iconBahasaSunda} iconBrown={iconSundaBrown} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
-              <CardSkills icon={iconLiveJualan} iconBrown={iconLiveJualanBrown} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
-              <CardSkills icon={iconSupplyThrift} iconBrown={iconSupplyBrown} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaIndonesia} iconBrown={iconIndonesiaBrown} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaInggris} iconBrown={iconInggrisBrown} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaSunda} iconBrown={iconSundaBrown} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
+              <CardSkills pilihfade={props.pilih} icon={iconLiveJualan} iconBrown={iconLiveJualanBrown} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
+              <CardSkills pilihfade={props.pilih} icon={iconSupplyThrift} iconBrown={iconSupplyBrown} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
             </div>
       </div>
     </>

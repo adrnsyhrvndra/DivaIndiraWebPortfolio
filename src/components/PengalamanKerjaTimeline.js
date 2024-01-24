@@ -10,6 +10,7 @@ import graphic2 from "../img/elements (2).png";
 import '../customcss/customvertical.css';
 import { CardPengalamanKerja } from "./subcomponents/PengalamanKerja/pengalamanKerjaCard";
 import { Titlepengalamankerja } from "./subcomponents/PengalamanKerja/Titlepengalamankerja";
+import { motion } from "framer-motion";
 // import WorkIcon from '@material-ui/icons/Work';
 
 export const PengalamanKerjaTimeline = () => {
@@ -34,7 +35,14 @@ export const PengalamanKerjaTimeline = () => {
             <img className="absolute hidden md:block md:w-40 md:left-0 md:bottom-0 xl:w-80" src={graphic1} alt="" />
             <img className="absolute hidden md:inline md:w-48 md:top-16 md:-right-16 xl:top-28 xl:-right-28 xl:w-96" src={graphic2} alt="" />
             <div className="pt-28 pb-24 px-3 xl:pt-44 xl:pb-52 xl:px-36">
-                  <Titlepengalamankerja/>
+                  <motion.div
+                        initial={{ opacity: 0,y: -10 }}
+                        whileInView={{ opacity: 1,y: 0 }}
+                        transition={{ duration: 1, ease: 'easeOut', type: 'tween' }}
+                        viewport={{ once: true }}
+                  >
+                        <Titlepengalamankerja/>
+                  </motion.div>
                   <div className="mt-14 xl:mt-20 2xl:mt-24">
                         <VerticalTimeline className="vertical-timeline-custom-line">
                               <CardPengalamanKerja img={imgSmk} namaInstitute="SMKN 1 Bandung" subRole="Jurusan Pemasaran" date="Desember 2016 - Maret 2019"/>

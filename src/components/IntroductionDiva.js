@@ -1,12 +1,22 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 
 export const IntroductionDiva = () => {
   return (
-    <div aria-label="introduction-diva" className="mt-11 md:mt-32 xl:mt-[9.5rem] relative">
+    <div 
+      aria-label="introduction-diva"
+      className="mt-11 md:mt-32 xl:mt-[9.5rem] relative"
+    >
       <div className="flex flex-row items-center xl:gap-6">
         <div className="grid grid-cols-12 md:gap-4 lg:gap-5">
           <div className="col-span-12 md:col-span-5 md:self-start">
-            <div className="flex flex-col md:gap-1 lg:gap-2">
+            <motion.div 
+              className="flex flex-col md:gap-1 lg:gap-2"
+              initial={{ opacity: 0, y: -300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{duration:1}}
+              viewport={{ once: true }}
+            >
               <div className="flex flex-row items-center gap-4 justify-center md:justify-start md:gap-4 lg:gap-6 xl:gap-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +49,7 @@ export const IntroductionDiva = () => {
               <div className="flex flex-row mt-8 items-center justify-center gap-3 md:mt-5 md:mx-0 md:justify-start md:gap-2 lg:gap-4 xl:mt-8 xl:gap-4 2xl:gap-8">
                 <div
                   aria-label="linkedin-socialmedia-icons"
-                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
+                  className="rounded-full bg-cream-web p-5 cursor-pointer transition-all scale-100 hover:scale-110 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +65,7 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="instagramn-socialmedia-icons"
-                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
+                  className="rounded-full bg-cream-web p-5 cursor-pointer transition-all scale-100 hover:scale-110 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +81,7 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="gmail-socialmedia-icons"
-                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
+                  className="rounded-full bg-cream-web p-5 cursor-pointer transition-all scale-100 hover:scale-110 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +97,7 @@ export const IntroductionDiva = () => {
                 </div>
                 <div
                   aria-label="whatsapp-socialmedia-icons"
-                  className="rounded-full bg-cream-web p-5 md:p-4 xl:p-5 2xl:p-6"
+                  className="rounded-full bg-cream-web p-5 cursor-pointer transition-all scale-100 hover:scale-110 md:p-4 xl:p-5 2xl:p-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +112,15 @@ export const IntroductionDiva = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="col-span-12 mt-8 md:mt-0 md:col-span-7 md:self-start">
+          <motion.div 
+            className="col-span-12 mt-8 md:mt-0 md:col-span-7 md:self-start"
+            initial={{ opacity: 0, y: -300 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{duration:2}}
+            viewport={{ once: true }}
+          >
             <p className="font-semibold text-[#878680] z-50 text-center text-xs leading-[1.8rem] md:text-start md:text-[0.6rem] md:leading-[1.8rem] lg:text-[1rem] xl:text-lg xl:leading-[2.6rem] 2xl:text-[1.4rem] 2xl:leading-[3rem] min-[1650px]:text-[1.5rem] min-[1650px]:leading-[3.2rem]">
               Lulusan baru S1 dari Sekolah Tinggi Ilmu Ekonomi Pasundan dengan
               spesialisasi bidang Manajemen. Memiliki pengalaman bekerja selama
@@ -116,7 +132,7 @@ export const IntroductionDiva = () => {
               pengalaman yang saya miliki membuat saya mampu bekerja baik secara
               tim ataupun individu.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="absolute hidden md:block md:right-0 md:-top-20 xl:right-0 xl:-top-28 z-10">

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import TextTransition, { presets } from 'react-text-transition';
 import CountUp from 'react-countup';
+import { motion } from "framer-motion";
 
 const textSubheads = ['Customer Service & Marketing', 'Livestreaming Host Social media', 'Social Media Savy Person', 'Sales Representative Customer'];
 
@@ -19,9 +20,12 @@ export const HeroCol1 = () => {
   
 
   return (
-    <div
+    <motion.div
       aria-label="col-pertama-hero-section"
       className="col-span-12 order-1 md:order-2 lg:col-span-5 lg:order-1 z-40 relative"
+      initial={{ x: '-60vw', opacity:0 }}
+      animate={{ x: 0, opacity:100 }}
+      transition={{ duration: 1, ease: 'easeOut', type: 'tween' }}
     >
       <div className="flex flex-row items-center justify-center gap-2 md:mt-12 lg:mt-0 lg:justify-start lg:gap-2 xl:gap-2 2xl:gap-4">
         <svg
@@ -131,6 +135,6 @@ export const HeroCol1 = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

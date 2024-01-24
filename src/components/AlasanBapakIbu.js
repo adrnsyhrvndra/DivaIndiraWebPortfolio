@@ -1,9 +1,9 @@
 import * as React from "react";
-import divaAalasan from "../img/diva-alasanskills.png";
 import arrowAlasan from "../img/arrow-icon.png";
 import { CardAlasan } from "./subcomponents/Alasan/cardAlasan";
 import { JudulAlasan } from "./subcomponents/Alasan/judulAlasan";
 import { Tilt } from 'react-tilt';
+import { motion } from "framer-motion";
 
 export const AlasanBapakIbu = () => {
 
@@ -49,15 +49,33 @@ export const AlasanBapakIbu = () => {
   return (
     <div aria-label="alasan-bapak-ibu-memilih-saya">
       <div className="grid grid-cols-12 md:mt-24 xl:gap-4 min-[1450px]:mt-10 2xl:mt-40">
-        <div className="col-span-12 order-2 mt-8 md:mt-0 md:order-1">
+        <motion.div 
+          className="col-span-12 order-2 mt-8 md:mt-0 md:order-1"
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{duration:1.5}}
+          viewport={{ once: true }}
+        >
           <JudulAlasan/>
-        </div>
-        <div className="col-span-12 self-end order-1 mt-10 md:order-2 lg:col-span-6 lg:self-end min-[1150px]:mt-16 xl:col-span-5 xl:mt-24 xl:px-2">
+        </motion.div>
+        <motion.div 
+          className="col-span-12 self-end order-1 mt-10 md:order-2 lg:col-span-6 lg:self-end min-[1150px]:mt-16 xl:col-span-5 xl:mt-24 xl:px-2"
+          initial={{ opacity: 0, x: -70 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{duration:1.5, delay:0.5 }}
+          viewport={{ once: true }}
+        >
           <Tilt options={defaultOptions}>
             <img className="cursor-pointer mx-auto md:w-[75%] xl:w-[95%] mr-auto" src={imageDivase} alt="" />
           </Tilt>
-        </div>
-        <div className="col-span-12 mt-6 lg:col-span-6 lg:self-end xl:col-span-7 md:mt-16 xl:mt-24 xl:px-2 order-3 md:order-3">
+        </motion.div>
+        <motion.div 
+          className="col-span-12 mt-6 lg:col-span-6 lg:self-end xl:col-span-7 md:mt-16 xl:mt-24 xl:px-2 order-3 md:order-3"
+          initial={{ opacity: 0, x: 70 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{duration:1.5, delay:0.5 }}
+          viewport={{ once: true }}
+        >
           <div
             aria-label="pembungkus-alasan-utama"
             className="flex flex-col gap-2 xl:gap-4"
@@ -75,7 +93,7 @@ export const AlasanBapakIbu = () => {
               <CardAlasan title={titleCardAlasan06} deskripsi={deskripsiCardAlasan06} icon={iconCardAlasan06} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

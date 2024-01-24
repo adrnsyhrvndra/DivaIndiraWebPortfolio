@@ -79,16 +79,16 @@ export const TabsSkill = () => {
                                     </Tab>
                               </TabsList>
                               <TabPanel value={1}>
-                                    <AllSkills/>
+                                    <AllSkills pilih={true}/>
                               </TabPanel>
                               <TabPanel value={2}>
-                                    <HardSkills/>
+                                    <HardSkills pilih={true}/>
                               </TabPanel>
                               <TabPanel value={3}>
-                                    <SoftSkills/>
+                                    <SoftSkills pilih={true}/>
                               </TabPanel>
                               <TabPanel value={4}>
-                                    <LingustikSkills/>
+                                    <LingustikSkills pilih={true}/>
                               </TabPanel>
                         </Tabs>
 

@@ -2,7 +2,7 @@ import * as React from "react";
 import { ReactDOM } from "react";
 import { CardSkills } from "../../cardSkills";
 
-export const SoftSkills = () => {
+export const SoftSkills = (props) => {
   let deskripsiKomunikasi = "Kemampuan berkomunikasi, baik lisan & tertulis, dengan berbagai pihak termasuk rekan kerja, klien/customer, dll.";
   let deskripsiAdaptasi = "Mampu beradaptasi dengan cepat dalam situasi yang berubah dan mampu menghadapi tantangan dengan fleksibilitas.";
   let deskripsiTime = "Mampu mengatur waktu dengan efisien, mengelola deadline, dan mengatur prioritas tugas dengan baik.";
@@ -29,12 +29,12 @@ export const SoftSkills = () => {
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
             <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
-              <CardSkills icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} iconBrown={iconKomunikasiBrown} skillJudul="Skill Komunikasi"/>
-              <CardSkills icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} iconBrown={iconAdaptasiBrown} skillJudul="Skill Adaptasi"/>
-              <CardSkills icon={iconTime} deskripsi={deskripsiTime} iconBrown={iconTimeBrown} skillJudul="Time Management"/>
-              <CardSkills icon={iconTim} deskripsi={deskripsiKolaborasi} iconBrown={iconKolaborasiBrown} skillJudul="Kerjasama Tim"/>
-              <CardSkills icon={iconAnalisis} deskripsi={deskripsiAnalisis} iconBrown={iconAnalisisBrown} skillJudul="Kemampuan Analisis"/>
-              <CardSkills icon={iconKnoflik} deskripsi={deskripsiKonflik} iconBrown={iconResolusiBrown} skillJudul="Penyelesaian Konflik"/>
+              <CardSkills pilihfade={props.pilih} icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} iconBrown={iconKomunikasiBrown} skillJudul="Skill Komunikasi"/>
+              <CardSkills pilihfade={props.pilih} icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} iconBrown={iconAdaptasiBrown} skillJudul="Skill Adaptasi"/>
+              <CardSkills pilihfade={props.pilih} icon={iconTime} deskripsi={deskripsiTime} iconBrown={iconTimeBrown} skillJudul="Time Management"/>
+              <CardSkills pilihfade={props.pilih} icon={iconTim} deskripsi={deskripsiKolaborasi} iconBrown={iconKolaborasiBrown} skillJudul="Kerjasama Tim"/>
+              <CardSkills pilihfade={props.pilih} icon={iconAnalisis} deskripsi={deskripsiAnalisis} iconBrown={iconAnalisisBrown} skillJudul="Kemampuan Analisis"/>
+              <CardSkills pilihfade={props.pilih} icon={iconKnoflik} deskripsi={deskripsiKonflik} iconBrown={iconResolusiBrown} skillJudul="Penyelesaian Konflik"/>
             </div>
       </div>
     </>

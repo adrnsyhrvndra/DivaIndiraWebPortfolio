@@ -2,6 +2,7 @@ import * as React from "react";
 import { HeroCol1 } from "./subcomponents/HeroCol1/HeroCol1";
 import { Suspense, lazy } from "react";
 import { LoadingLazy } from "./subcomponents/LoadingLazy/LoadingLazy";
+import { motion } from "framer-motion";
 
 const LazyImage = lazy(() => import("./LazyImage"));
 
@@ -17,18 +18,26 @@ export const HeroSection = () => {
     >
       <HeroCol1/>
       <div className="col-span-12 order-2 md:order-1 md:mt-10 lg:mt-0 lg:order-2 lg:col-span-7">
-        <Suspense fallback={<LoadingLazy />}>
-          <LazyImage
-            src={tabletPcDivaImages}
-            alt="image-for-laptop"
-            className="hidden md:block md:w-[80%] scale-100 transition-all cursor-pointer hover:scale-110 md:mx-auto lg:w-full"
-          />
-          <LazyImage
-            src={mobileImageDivas}
-            alt="image-for-mobile"
-            className="w-[90%] scale-100 transition-all cursor-pointer hover:scale-110 mx-auto md:hidden"
-          />
-        </Suspense>
+        <motion.div
+          initial={{ x: '60vw', opacity:0 }}
+          animate={{ x: 0, opacity:100 }}
+          transition={{ duration: 1, ease: 'easeOut', type: 'tween' }}
+        >
+          <Suspense
+          fallback={<LoadingLazy />}
+          >
+            <LazyImage
+              src={tabletPcDivaImages}
+              alt="image-for-laptop"
+              className="hidden md:block md:w-[80%] scale-100 transition-all cursor-pointer hover:scale-110 md:mx-auto lg:w-full"
+            />
+            <LazyImage
+              src={mobileImageDivas}
+              alt="image-for-mobile"
+              className="w-[90%] scale-100 transition-all cursor-pointer hover:scale-110 mx-auto md:hidden"
+            />
+          </Suspense>
+        </motion.div>
       </div>
     </div>
   );

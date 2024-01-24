@@ -2,7 +2,7 @@ import * as React from "react";
 import { ReactDOM } from "react";
 import { CardSkills } from "../../cardSkills";
 
-export const AllSkills = () => {
+export const AllSkills = (props) => {
 
   // ===================
   // Hardskill
@@ -84,25 +84,25 @@ export const AllSkills = () => {
     <>
       <div aria-label="cards-skill-dan-kemampuan" className="mt-8 xl:mt-10">
             <div className="grid grid-cols-12 md:gap-4 xl:gap-11">
-              <CardSkills icon={iconCanva} iconBrown={iconCanvaBrown} skillJudul="Canva Apps" deskripsi={deskripsiCanva}/>
-              <CardSkills icon={iconCapcut} iconBrown={iconCapcutBrown} skillJudul="Capcut Apps" deskripsi={deskripsiCapcut}/>
-              <CardSkills icon={iconWord} iconBrown={iconWordBrown} skillJudul="Microsoft Word" deskripsi={deskripsiWord}/>
-              <CardSkills icon={iconExcel} iconBrown={iconExcelBrown} skillJudul="Microsoft Excel" deskripsi={deskripsiExcel}/>
-              <CardSkills icon={iconPowerPoint} iconBrown={iconPPTBrown} skillJudul="Power Point" deskripsi={deskripsiPowerPoint}/>
-              <CardSkills icon={iconTiktok} iconBrown={iconTiktokBrown} skillJudul="Tiktok" deskripsi={deskripsiTiktok}/>
-              <CardSkills icon={iconShopee} iconBrown={iconShopeeBrown} skillJudul="Shopee" deskripsi={deskripsiShopee}/>
-              <CardSkills icon={iconTiktokShop} iconBrown={iconTiktokShopBrown} skillJudul="Tiktok Shop" deskripsi={deskripsiTiktokshop}/>
-              <CardSkills icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} iconBrown={iconKomunikasiBrown} skillJudul="Skill Komunikasi"/>
-              <CardSkills icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} iconBrown={iconAdaptasiBrown} skillJudul="Skill Adaptasi"/>
-              <CardSkills icon={iconTime} deskripsi={deskripsiTime} iconBrown={iconTimeBrown} skillJudul="Time Management"/>
-              <CardSkills icon={iconTim} deskripsi={deskripsiKolaborasi} iconBrown={iconKolaborasiBrown} skillJudul="Kerjasama Tim"/>
-              <CardSkills icon={iconAnalisis} deskripsi={deskripsiAnalisis} iconBrown={iconAnalisisBrown} skillJudul="Kemampuan Analisis"/>
-              <CardSkills icon={iconKnoflik} deskripsi={deskripsiKonflik} iconBrown={iconResolusiBrown} skillJudul="Penyelesaian Konflik"/>
-              <CardSkills icon={iconBahasaIndonesia} iconBrown={iconIndonesiaBrown} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
-              <CardSkills icon={iconBahasaInggris} iconBrown={iconInggrisBrown} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
-              <CardSkills icon={iconBahasaSunda} iconBrown={iconSundaBrown} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
-              <CardSkills icon={iconLiveJualan} iconBrown={iconLiveJualanBrown} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
-              <CardSkills icon={iconSupplyThrift} iconBrown={iconSupplyBrown} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
+              <CardSkills pilihfade={props.pilih} pilih={props.pilih} icon={iconCanva} iconBrown={iconCanvaBrown} skillJudul="Canva Apps" deskripsi={deskripsiCanva}/>
+              <CardSkills pilihfade={props.pilih} icon={iconCapcut} iconBrown={iconCapcutBrown} skillJudul="Capcut Apps" deskripsi={deskripsiCapcut}/>
+              <CardSkills pilihfade={props.pilih} icon={iconWord} iconBrown={iconWordBrown} skillJudul="Microsoft Word" deskripsi={deskripsiWord}/>
+              <CardSkills pilihfade={props.pilih} icon={iconExcel} iconBrown={iconExcelBrown} skillJudul="Microsoft Excel" deskripsi={deskripsiExcel}/>
+              <CardSkills pilihfade={props.pilih} icon={iconPowerPoint} iconBrown={iconPPTBrown} skillJudul="Power Point" deskripsi={deskripsiPowerPoint}/>
+              <CardSkills pilihfade={props.pilih} icon={iconTiktok} iconBrown={iconTiktokBrown} skillJudul="Tiktok" deskripsi={deskripsiTiktok}/>
+              <CardSkills pilihfade={props.pilih} icon={iconShopee} iconBrown={iconShopeeBrown} skillJudul="Shopee" deskripsi={deskripsiShopee}/>
+              <CardSkills pilihfade={props.pilih} icon={iconTiktokShop} iconBrown={iconTiktokShopBrown} skillJudul="Tiktok Shop" deskripsi={deskripsiTiktokshop}/>
+              <CardSkills pilihfade={props.pilih} icon={iconKomunikasi} deskripsi={deskripsiKomunikasi} iconBrown={iconKomunikasiBrown} skillJudul="Skill Komunikasi"/>
+              <CardSkills pilihfade={props.pilih} icon={iconAdaptasi} deskripsi={deskripsiAdaptasi} iconBrown={iconAdaptasiBrown} skillJudul="Skill Adaptasi"/>
+              <CardSkills pilihfade={props.pilih} icon={iconTime} deskripsi={deskripsiTime} iconBrown={iconTimeBrown} skillJudul="Time Management"/>
+              <CardSkills pilihfade={props.pilih} icon={iconTim} deskripsi={deskripsiKolaborasi} iconBrown={iconKolaborasiBrown} skillJudul="Kerjasama Tim"/>
+              <CardSkills pilihfade={props.pilih} icon={iconAnalisis} deskripsi={deskripsiAnalisis} iconBrown={iconAnalisisBrown} skillJudul="Kemampuan Analisis"/>
+              <CardSkills pilihfade={props.pilih} icon={iconKnoflik} deskripsi={deskripsiKonflik} iconBrown={iconResolusiBrown} skillJudul="Penyelesaian Konflik"/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaIndonesia} iconBrown={iconIndonesiaBrown} skillJudul="Bahasa Indonesia" deskripsi={deskripsiIndonesia}/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaInggris} iconBrown={iconInggrisBrown} skillJudul="Bahasa Inggris" deskripsi={deskripsiInggris}/>
+              <CardSkills pilihfade={props.pilih} icon={iconBahasaSunda} iconBrown={iconSundaBrown} skillJudul="Bahasa Sunda" deskripsi={deskripsiSunda}/>
+              <CardSkills pilihfade={props.pilih} icon={iconLiveJualan} iconBrown={iconLiveJualanBrown} skillJudul="Live Jualan" deskripsi={deskripsiLiveJualan}/>
+              <CardSkills pilihfade={props.pilih} icon={iconSupplyThrift} iconBrown={iconSupplyBrown} skillJudul="Supply Thrift" deskripsi={deskripsiSupplyThrift}/>
             </div>
       </div>
     </>
