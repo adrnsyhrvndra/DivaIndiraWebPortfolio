@@ -130,19 +130,29 @@ export const Navbar = () => {
               </div>
               <div aria-label='nav-list' className='flex flex-col gap-6 mt-12 uppercase cursor-pointer'>
                     <div className='group border-b-[0.2px] border-opacity-50 border-[#F5ECCB] pb-4 hover:border-orange-100'>
-                          <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Home</p>
+                          <a href="#home">
+                            <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Home</p>
+                          </a>
                     </div>
                     <div className='group border-b-[0.2px] border-opacity-50 border-[#F5ECCB] pb-4 hover:border-orange-100'>
-                          <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>About</p>
+                          <a href="#about">
+                            <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>About</p>
+                          </a>
                     </div>
                     <div className='group border-b-[0.2px] border-opacity-50 border-[#F5ECCB] pb-4 hover:border-orange-100'>
-                          <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Services</p>
+                          <a href="#experience">
+                            <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Experience</p>
+                          </a>
                     </div>
                     <div className='group border-b-[0.2px] border-opacity-50 border-[#F5ECCB] pb-4 hover:border-orange-100'>
-                          <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Portfolio</p>
+                          <a href="#skill">
+                            <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>Skills</p>
+                          </a>
                     </div>
                     <div className='group border-b-[0.2px] border-opacity-50 border-[#F5ECCB] pb-4 hover:border-orange-100'>
-                          <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>CV Download</p>
+                          <a href="#cv">
+                            <p className='font-bold text-xs text-[#886B56] group-hover:text-[#F5ECCB] md:text-base'>CV Download</p>
+                          </a>
                     </div>
               </div>
               <a href="https://wa.link/82x108" target="_blank" rel="noreferrer">

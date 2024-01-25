@@ -46,7 +46,7 @@ export default function App() {
           <h3 className="font-semibold text-base w-[80%] text-center text-[#FFF4E3] mx-auto md:text-2xl xl:text-3xl">Tunggu sebentar ya..</h3>
         </div>
       :
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden scroll-smooth">
           <div aria-label="navbar-and-herosection" className="bg-bg-web pb-36 mx-auto px-4 md:px-6 lg:pb-0 lg:px-6 xl:px-8 2xl:px-16">
             <Navbar/>
             <HeroSection />

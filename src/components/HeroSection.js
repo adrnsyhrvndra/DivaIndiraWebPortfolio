@@ -13,6 +13,7 @@ export const HeroSection = () => {
 
   return (
     <div
+      id="home"
       aria-label="hero-section"
       className="grid grid-cols-12 relative mt-10 lg:px-14 lg:gap-3 lg:pb-44 lg:mt-[5.5rem] xl:px-14 xl:pb-44 xl:mt-[5.5rem] 2xl:pb-60"
     >

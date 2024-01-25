@@ -29,6 +29,7 @@ export const PengalamanKerjaTimeline = () => {
 
       return (
       <div
+            id="experience"
             aria-label="pengalaman-kerja-timeline"
             className="bg-bg-hitam-vertical relative overflow-x-hidden mt-16 xl:mt-32"
       >

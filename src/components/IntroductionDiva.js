@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 export const IntroductionDiva = () => {
   return (
-    <div 
+    <div
+      id="about" 
       aria-label="introduction-diva"
       className="mt-11 md:mt-32 xl:mt-[9.5rem] relative"
     >

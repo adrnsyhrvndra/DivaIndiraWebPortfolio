@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const WorkTogetherAndCv = () => {
 
       return (
-            <>
+            <div id="cv">
                   <motion.div
                         initial={{opacity:0, x:-100}}
                         whileInView={{opacity:1, x:0}}
@@ -45,6 +45,6 @@ export const WorkTogetherAndCv = () => {
                               </div>
                         </div>
                   </motion.div>
-            </>
+            </div>
       );
 };

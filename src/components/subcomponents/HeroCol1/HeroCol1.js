@@ -62,7 +62,7 @@ export const HeroCol1 = () => {
       </h1>
       <div
         aria-label="experience-and-company"
-        className="bg-black text-white flex flex-row justify-center z-50 mx-auto gap-5 mt-6 rounded-[0.65rem] w-fit px-6 min-[400px]:w-[80%] md:mt-10 md:w-fit md:gap-9 md:px-14 md:rounded-[1rem] md:py-7 lg:mt-6 lg:mx-0 lg:px-8 lg:gap-5 lg:w-fit min-[1130px]:px-12 xl:gap-8 xl:w-[110%] xl:mt-8 xl:py-10 min-[1440px]:gap-12 xl:rounded-2xl 2xl:w-[115%] 2xl:py-12 min-[1700px]:w-[120%]"
+        className="bg-black text-white flex flex-row justify-center z-50 mx-auto gap-5 mt-6 rounded-[0.65rem] w-fit px-7 md:mt-10 md:w-fit md:gap-9 md:px-14 md:rounded-[1rem] md:py-7 lg:mt-6 lg:mx-0 lg:px-8 lg:gap-5 lg:w-fit min-[1130px]:px-12 xl:gap-8 xl:w-[110%] xl:mt-8 xl:py-10 min-[1440px]:gap-12 xl:rounded-2xl 2xl:w-[115%] 2xl:py-12 min-[1700px]:w-[120%]"
       >
         <div className="flex flex-row items-center gap-3 md:gap-9 lg:gap-3 xl:gap-4 2xl:gap-6">
           <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">
