@@ -13,16 +13,18 @@ export const PendidikanTerakhkirkuCard = () => {
         <div className="flex flex-col md:flex-row items-center gap-6 z-10 md:gap-14 xl:gap-36 2xl:gap-44">
           <div className="flex flex-col xl:ml-10 z-10 gap-2">
             <h2 className="text-white text-[1.5rem] text-center font-extrabold md:text-start lg:text-[2rem] xl:text-[2.1rem] min-[1400px]:text-[2.3rem] 2xl:text-[3rem]">
-              Pendidikan Terakhirku
+                Pendidikan Terakhirku
             </h2>
             <p className="font-normal text-[0.7rem] text-white break-words text-center md:text-start lg:text-[0.9rem] xl:text[1.063rem] 2xl:text-[1.2rem]">
               Fresh Graduate Bachelor of degree dari Sekolah Tinggi Ilmu <br className="hidden md:block" />{" "}
               Ekonomi Pasundan.
             </p>
           </div>
-          <button className="text-[0.8rem] py-4 px-6 uppercase text-center bg-lebih-detail font-bold bgpink z-30 break-words md:text-[0.8rem] md:px-8 md:py-2 lg:mt-0 xl:py-5 xl:px-16 xl:text-sm 2xl:text-base">
-            LIHAT LEBIH DETAIL
-          </button>
+          <a href="#experience">
+            <button className="text-[0.8rem] py-4 px-6 uppercase text-center bg-lebih-detail font-bold bgpink z-30 break-words md:text-[0.8rem] md:px-8 md:py-2 lg:mt-0 xl:py-5 xl:px-16 xl:text-sm 2xl:text-base">
+              LIHAT LEBIH DETAIL
+            </button>
+          </a>
         </div>
         <svg
           className="absolute bottom-0 left-0 hidden md:block md:w-20 md:-left-2 lg:w-28 lg:left-5"

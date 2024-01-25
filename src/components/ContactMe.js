@@ -44,7 +44,7 @@ export const ContactMe = () => {
                                                       <label htmlFor="" className="font-normal text-[0.6rem] md:text-[1rem] xl:text-[1.12rem]">Kirim Pesan</label>
                                                       <input type="text" placeholder="Silahkan Masukan Nama Bapak/Ibu" className="w-full bg-[#FAF1F1] pt-1 pb-12 pl-3 placeholder:text-[0.6rem] md:pt-4 md:pl-6 md:pb-16 md:placeholder:text-[1rem] md:text-[1rem] lg:pt-3 placeholder:text-[#A9A9AA99] placeholder:font-normal focus:outline-none focus:border-orange-web focus:ring-2 focus:ring-orange-web xl:rounded-[0.16rem] xl:pt-6 xl:pb-14 xl:pl-7 xl:placeholder:tracking-tight"/>
                                                 </div>
-                                                <button className="block uppercase font-bold text-white bg-cream-web text-center text-[0.6rem] rounded-[0.1rem] mt-2 py-2 md:py-4 md:text-[1.1rem] lg:mt-1 lg:text-base xl:rounded-[0.3rem] xl:text-[1.25rem] xl:py-5">KIRIM PESAN</button>
+                                                <button className="block uppercase font-bold text-white bg-cream-web text-center text-[0.6rem] rounded-[0.1rem] mt-2 py-2 transition-all scale-100 hover:scale-105 md:py-4 md:text-[1.1rem] lg:mt-1 lg:text-base xl:rounded-[0.3rem] xl:text-[1.25rem] xl:py-5">KIRIM PESAN</button>
                                           </form>
                                     </div>
                               </div>
