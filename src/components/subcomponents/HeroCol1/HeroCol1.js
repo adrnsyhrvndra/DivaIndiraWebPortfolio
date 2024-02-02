@@ -66,7 +66,7 @@ export const HeroCol1 = () => {
       >
         <div className="flex flex-row items-center gap-3 md:gap-9 lg:gap-3 xl:gap-4 2xl:gap-6">
           <h2 className="font-extrabold text-[2.9rem] md:text-[4.8rem] lg:text-[3.5rem] xl:text-7xl 2xl:text-8xl min-[1700px]:text-9xl">
-            <CountUp end={5} duration={6} />
+            <CountUp end={4} duration={6} />
           </h2>
           <h4 className="text-[0.95rem] leading-[1rem] min-[500px]:leading-[1.1rem] min-[500px]:text-base md:text-[1.9rem] md:leading-[1.8rem] lg:text-[1.5rem] lg:leading-[1.5rem] xl:text-2xl min-[1440px]:text-[1.9rem] 2xl:leading-[2.3rem] min-[1700px]:text-[2.3rem] min-[1900px]:text-[2.5rem] min-[1900px]:leading-[2.5rem]">
             Tahun <br />

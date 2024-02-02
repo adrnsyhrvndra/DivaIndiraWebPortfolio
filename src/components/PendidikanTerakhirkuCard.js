@@ -20,8 +20,8 @@ export const PendidikanTerakhkirkuCard = () => {
               Ekonomi Pasundan.
             </p>
           </div>
-          <a href="#experience">
-            <button className="text-[0.8rem] py-4 px-6 uppercase text-center bg-lebih-detail font-bold bgpink z-30 break-words md:text-[0.8rem] md:px-8 md:py-2 lg:mt-0 xl:py-5 xl:px-16 xl:text-sm 2xl:text-base">
+          <a href="#experience" className="z-10">
+            <button className="text-[0.8rem] py-4 px-6 uppercase text-center bg-lebih-detail font-bold break-words md:text-[0.8rem] md:px-8 md:py-2 lg:mt-0 xl:py-5 xl:px-16 xl:text-sm 2xl:text-base">
               LIHAT LEBIH DETAIL
             </button>
           </a>

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-hitam-vertical' : "url('/src/img/bg-vertical-timeline-hitam.png')",
+        'bg-hitam-vertical' : "url('https://res.cloudinary.com/adriansyah-course-laravel7/image/upload/v1706874601/divaWebPortfolio/bg-vertical-timeline-hitam_tf1kew.png')",
       },
       colors: {
         'cream-web': '#E1B171',
