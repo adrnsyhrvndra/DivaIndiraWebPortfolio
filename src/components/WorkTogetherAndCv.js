@@ -23,7 +23,7 @@ export const WorkTogetherAndCv = () => {
                                                 <a href="https://wa.link/82x108" target="_blank" rel="noreferrer">
                                                       <button className="bg-orange-web uppercase text-white font-semibold text-[0.7rem] py-4 px-6 rounded-[0.2rem] hover:opacity-60 lg:text-base xl:text-[0.8rem] xl:py-4 xl:px-6 xl:rounded-[0.28rem] 2xl:text-[1rem]">Kontak Saya Sekarang</button>
                                                 </a>
-                                                <a href="https://pdfhost.io/v/Yy4FvE4HJ_Resume" target="_blank" rel="noreferrer" className="flex flex-row items-center gap-3">
+                                                <a href="https://drive.google.com/file/d/1bsUkZTZ17nKq5lA8JQzOGXLg8Lbkx1ri/view?usp=sharing" target="_blank" rel="noreferrer" className="flex flex-row items-center gap-3">
                                                       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 xl:w-7" viewBox="0 0 28 28" fill="none">
                                                             <g clipPath="url(#clip0_34_1448)">
                                                             <path d="M21.1053 16.9295V20.2979H7.6316V16.9295H5.38599V20.2979C5.38599 21.533 6.39651 22.5435 7.6316 22.5435H21.1053C22.3404 22.5435 23.3509 21.533 23.3509 20.2979V16.9295H21.1053ZM19.9825 12.4383L18.3993 10.8551L15.4912 13.7519V4.57861H13.2456V13.7519L10.3376 10.8551L8.75441 12.4383L14.3684 18.0523L19.9825 12.4383Z" fill="#EF713F"/>
